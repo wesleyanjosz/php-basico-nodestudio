@@ -40,6 +40,12 @@ if (is_bool($admin)) {
 /* compostos */
 $car = array('gol', 'uno', 'camaro', 12, 20.6, true);
 var_dump($car);
+if (is_array($admin)) {
+    echo 'é um array<br>';
+} else {
+    echo 'não é um array<br>';
+}
+
 echo "<hr>";
 
 //object
@@ -54,3 +60,15 @@ class Custom {
 $custom = new Custom();
 $custom->getName('Wesley');
 var_dump($custom);
+if (is_object($custom)) {
+    echo 'é um objeto<br>';
+} else {
+    echo 'não é um objeto<br>';
+}
+
+/* especiais */
+//null
+$city = null;
+var_dump($city);
+
+//resource
