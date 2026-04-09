@@ -36,3 +36,21 @@ if (is_bool($admin)) {
 } else {
     echo 'não é um boolean<br>';
 }
+
+/* compostos */
+$car = array('gol', 'uno', 'camaro', 12, 20.6, true);
+var_dump($car);
+echo "<hr>";
+
+//object
+class Custom {
+    public $name;
+    
+    function getName($name) {
+        $this->name = $name;
+    }
+}
+
+$custom = new Custom();
+$custom->getName('Wesley');
+var_dump($custom);
