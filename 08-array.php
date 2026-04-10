@@ -36,3 +36,45 @@ echo $totCustomer.'<br>';
 foreach ($car as $value) {
     echo $value.'<br>';
 }
+echo '<hr>';
+
+//arrays associativos
+$people = [
+    'name' => 'wesley',
+    'age' => 29,
+    'height' => 1.70
+];
+echo $people['age'].'<br>';
+$people['cidade'] = 'santo andré';
+print_r($people);
+echo '<br>';
+
+foreach ($people as $index => $value) {
+    echo $index.' -> '.$value.'<br>'; 
+}
+
+//arrays multidimensionais
+$times = [
+    'carioca' => [
+        'campeao' => 'vasco',
+        'vice' => 'flamengo',
+        'terceiro' => 'botafogo'
+    ],
+    'paulista' => [
+        'santos',
+        'são paulo',
+        'palmeiras'
+    ],
+    'baiano' => [
+        'bahia',
+        'vitoriá',
+        'itabuna'
+    ]
+];
+
+echo '<hr>';
+echo $times['carioca']['campeao'].'<br>';
+
+foreach($times['carioca'] as $i => $v) {
+    echo $i.' -> '.$v.'<br>';
+}
