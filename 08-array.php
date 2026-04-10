@@ -1,5 +1,5 @@
 <?php
-
+//arrays numéricos
 $car = [
     1 => 'bmw', 
     2 => 'veloster', 
@@ -26,3 +26,13 @@ $customer = [
     'felipe'
 ];
 print_r($customer);
+echo '<hr>';
+
+//count
+$totCustomer = count($bike);
+echo $totCustomer.'<br>';
+
+//foreach
+foreach ($car as $value) {
+    echo $value.'<br>';
+}
