@@ -48,3 +48,39 @@ echo '<br>';
 echo array_shift($cars);
 echo '<br>';
 print_r($cars);
+echo '<br>';
+
+//parte03
+$fruit = [
+    'uva',
+    'laranja',
+    'maça'
+];
+print_r($fruit);
+echo '<br>';
+array_unshift($fruit, 'manga', 'acerola', 'morango');
+print_r($fruit);
+echo '<br>';
+
+array_push($fruit, 'manga', 'acerola', 'morango');
+print_r($fruit);
+echo '<br>';
+
+$keys = [
+    'campeao',
+    'vice',
+    'terceiro'
+];
+
+$values = [
+    'vasco',
+    'flamengo',
+    'botafogo'
+];
+
+$times = array_combine($keys, $values);
+print_r($times);
+echo '<br>';
+
+$sum = [5, 6, 10, 8];
+echo array_sum($sum);
