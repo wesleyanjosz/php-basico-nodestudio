@@ -84,3 +84,25 @@ echo '<br>';
 
 $sum = [5, 6, 10, 8];
 echo array_sum($sum);
+echo '<br>';
+
+//parte04
+$data = '30/12/2018';
+$newData = explode('/', $data);
+print_r($newData);
+echo '<br>';
+
+$text = 'meu nome não é johnny';
+$array = explode(' ', $text);
+print_r($array); 
+echo '<br>';
+
+$names = [
+    'wesley',
+    'rodrigo',
+    'neusa',
+    'talita'
+];
+
+$str = implode(', ', $names);
+echo $str;
