@@ -20,3 +20,31 @@ if(in_array('wesley', $names)) {
 
 $keys = array_keys($names);
 print_r($keys);
+
+//parte02
+$values = array_values($names);
+print_r($values);
+echo '<br>';
+
+$cars = [
+    'camaro',
+    'uno',
+    'gol'
+];
+
+$bikes = [
+    'pop100',
+    '50cc',
+    'cb1000'
+];
+
+$vehicles = array_merge($cars, $bikes);
+print_r($vehicles);
+echo '<br>';
+echo array_pop($cars);
+echo '<br>';
+print_r($cars);
+echo '<br>';
+echo array_shift($cars);
+echo '<br>';
+print_r($cars);
