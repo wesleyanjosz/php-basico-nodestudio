@@ -12,4 +12,20 @@ if($num == 10) {
 echo '<hr>';
 
 $avg = 7;
-echo $avg >= 7 ? 'aprovado' : 'reprovado';
+echo $avg >= 7 ? 'aprovado<br>' : 'reprovado<br>';
+
+//switch
+$color = 'red';
+
+switch($color) {
+    case 'red':
+        echo 'Cor vermelha<br>';
+        break;
+    case 'yellow': 
+        echo 'cor amarela<br>'; 
+        break;
+    case 'green': 
+        echo 'cor verde<br>'; 
+        break;
+    default: echo 'cor diferente<br>';
+}
